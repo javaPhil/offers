@@ -10,4 +10,12 @@ describe("filter actions", () => {
     }
     expect(filterActions.setFilterParam(filterType,filterParam)).toEqual(expectedAction)
   })
+  it("should create an action to set isDirty to true", () => {
+    const isDirty = true
+    const expectedAction = {
+      type: filterActions.SET_FILTERS_DIRTY,
+      payload: isDirty
+    }
+    expect(filterActions.setFiltersDirty(isDirty)).toEqual(expectedAction)
+  })
 })

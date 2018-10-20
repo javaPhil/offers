@@ -34,25 +34,25 @@ export const fetchOfferData = () => {
 };
 
 export const SET_OFFER_DATA = "SET_OFFER_DATA";
-export const setOfferData = data => dispatch => {
-  dispatch({
+export function setOfferData(data){
+  return{
     type: SET_OFFER_DATA,
     payload: data
-  });
+  };
 };
 
 export const SET_OFFERS_LOADING = "SET_OFFERS_LOADING";
-export const setOffersLoading = loading => dispatch => {
-  dispatch({
+export function setOffersLoading(loading){
+  return {
     type: SET_OFFERS_LOADING,
     payload: loading
-  });
+  };
 };
 
 export const SET_API_ERROR = "SET_API_ERROR";
-export const setApiError = isError => dispatch => {
-  dispatch({
+export function setApiError(isError){
+  return {
     type: SET_API_ERROR,
     payload: isError
-  });
+  };
 };
