@@ -1,0 +1,29 @@
+{
+  "name": "offers",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@material-ui/core": "3.2.2",
+    "@material-ui/icons": "3.0.1",
+    "babel-jest": "23.6.0",
+    "cross-fetch": "2.2.2",
+    "jest": "23.6.0",
+    "jss": "9.8.7",
+    "next": "latest",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-jss": "8.6.1",
+    "react-redux": "5.0.7",
+    "redux": "4.0.1",
+    "redux-logger": "3.0.6",
+    "redux-thunk": "2.3.0"
+  },
+  "license": "ISC",
+  "keywords": [],
+  "description": "Building offers page with Next.js, React, and Semantic UI."
+}
