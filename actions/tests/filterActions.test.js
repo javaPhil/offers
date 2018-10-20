@@ -1,7 +1,7 @@
 import * as filterActions from "../filterActions"
 
-describe('filter actions', () => {
-  it('should create an action to set a filter param', () => {
+describe("filter actions", () => {
+  it("should create an action to set a filter param", () => {
     const filterParam = "asc"
     const filterType = "order"
     const expectedAction = {
