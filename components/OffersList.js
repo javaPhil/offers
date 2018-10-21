@@ -38,6 +38,10 @@ const styles = theme => ({
   },
   headerHighlighted: {
     color: theme.palette.primary.main
+  },
+  footerPagination: {
+    display: "flex",
+    justifyContent: "flex-end"
   }
 });
 
@@ -131,7 +135,8 @@ class OffersList extends Component {
         </TableBody>
         <TableFooter>
           <TableRow>
-            <div>
+          <TableCell colSpan={6}>
+            <div className={classes.footerPagination}>
               <IconButton
                 onClick={this.handleBackButtonClick}
                 disabled={offset === 0}
@@ -146,6 +151,7 @@ class OffersList extends Component {
                 <KeyboardArrowRight />
               </IconButton>
             </div>
+          </TableCell>
           </TableRow>
         </TableFooter>
       </Table>
